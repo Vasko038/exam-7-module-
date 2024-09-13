@@ -1,0 +1,29 @@
+Vakansiyalar Admin Panel
+
+2 ta qismdan tashkil topadi: Kompaniyalar va ishlar
+Kompaniya malumotlari kiritiladi va har bir kompaniyani ozini vakansiya (bosh ish orinlari kiritiladi)
+
+
+2 lasini ham oddiy admin panel korinishida qilinadi: menu, jadval, header, drawer, form komponentlaridan foydalanish kerak. api bilan qilinmaydi, redux bilan qilish kerak boladi
+
+
+Company {
+  id          String      
+  title       String
+  description String?
+  image       String?
+  website     String?
+}
+ Job {
+  id                String     
+  title             String
+  description       String
+  technologies      String[]
+  location          String?
+  salary            String
+  phone             String?
+  email             String?
+  telegram          String?
+  instagram         String?
+  companyId         Int
+}
